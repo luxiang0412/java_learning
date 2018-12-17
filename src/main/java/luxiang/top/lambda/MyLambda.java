@@ -1,9 +1,7 @@
 package luxiang.top.lambda;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
 public class MyLambda {
@@ -44,5 +42,18 @@ public class MyLambda {
         System.out.println(list.stream()
                 .reduce(1, (a,b)-> a+b,(a,b) -> a));
 
+        forEach(list,(index,e)->{
+            System.out.println("index:"+index+",e:"+e);
+        });
+
+
+    }
+
+    public static void forEach(List<? extends Object> list,BiConsumer<Integer,? super Object> var1) {
+        Objects.requireNonNull(var1);
+        for (int i =0;i<list.size();i++){
+            Object u = list.get(i);
+            var1.accept(i, u);
+        }
     }
 }
