@@ -70,9 +70,13 @@ public class Test {
         List<ArrayList> arrayLists = DeepcopyList.deepCopy(parent);
         //浅拷贝
         ArrayList arrayList = (ArrayList) parent.clone();
+        //引用复制
+        ArrayList arrayList1 = parent;
         System.out.println(parent);
         parent.get(1).remove(1);
+        parent.remove(0);
         System.out.println(arrayLists);
         System.out.println(arrayList);
+        System.out.println(arrayList1);
     }
 }
