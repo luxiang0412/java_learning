@@ -59,3 +59,4 @@ System.out.println("stream用时（毫秒）："+(time2-time1)+"，list：");
 parallelStream用时（毫秒）：8042，list：
 stream用时（毫秒）：30020，list：
 ```
+## ArrayList
