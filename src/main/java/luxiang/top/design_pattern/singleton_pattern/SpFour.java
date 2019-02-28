@@ -2,6 +2,9 @@ package luxiang.top.design_pattern.singleton_pattern;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * 双重检查模式 （DCL）
+ */
 public class SpFour {
 
     private static SpFour spFour = null;
