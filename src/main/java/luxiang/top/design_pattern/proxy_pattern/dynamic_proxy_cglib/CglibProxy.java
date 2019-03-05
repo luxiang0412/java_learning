@@ -10,7 +10,7 @@ public class CglibProxy implements MethodInterceptor {
 
     private Object target;
 
-    public CglibProxy(Object target) {
+    private CglibProxy(Object target) {
         this.target = target;
     }
 

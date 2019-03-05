@@ -10,5 +10,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.2" level="project" />
+    <orderEntry type="library" name="Gradle: cglib:cglib-nodep:2.2" level="project" />
   </component>
 </module>
