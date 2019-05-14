@@ -13,4 +13,5 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compileOnly 'org.projectlombok:lombok:1.18.2'
     compile group: 'cglib', name: 'cglib-nodep', version: '2.2'
+    compile group: 'redis.clients', name: 'jedis', version: '3.0.1'
 }
